@@ -29,23 +29,6 @@ let league =[
 
 ]
 
-let company = {
-    name:"kpk limited",
-    status:"pending",
-}
-Object.freeze(company)
-
-console.log(Object.isFrozen(company));
-company.name = "opp incoporation";
-console.log(company.name)
-
-console.log(Object.keys(company).includes("status"))
-
-
-
-
-
-
 function compilator(leaguePoint){
     const averagePoint = 30;
     if(averagePoint > leaguePoint){
@@ -61,17 +44,37 @@ function compilator(leaguePoint){
 
 console.log(compilator(league[league.length-1].points));
 
-league.forEach(function(val1){
-    
-    printCompilator(val1.points);
-
-    
-});
-
 function printCompilator(leaguePoint){
     console.log(compilator(leaguePoint));
 };
-    
+
+league.forEach(function(val1){
+    printCompilator(val1.points);
+});
+
+
+
+
+
+let company = {
+    name:"kpk limited",
+    status:"pending",
+}
+Object.freeze(company)
+
+console.log(Object.isFrozen(company));
+company.name = "opp incoporation";
+console.log(company.name)
+
+console.log(Object.keys(company).includes("status"));
+
+Array.from(league);
+Array.isArray(company);
+
+
+
+
+
 
 
 
