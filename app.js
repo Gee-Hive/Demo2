@@ -42,18 +42,17 @@ function compilator(leaguePoint){
     }
 };
 
-console.log(compilator(league[league.length-1].points));
+//console.log(compilator(league[league.length-1].points));
 
-function printCompilator(leaguePoint){
-    console.log(compilator(leaguePoint));
+function printCompilator(){
+    console.log(compilator(league[0].points));
 };
+
+printCompilator();
 
 league.forEach(function(val1){
     printCompilator(val1.points);
 });
-
-
-
 
 
 let company = {
@@ -72,17 +71,37 @@ Array.from(league);
 Array.isArray(company);
 
 
+//normal foreach method to loop through
+let bookList = ["novels", "newspaper", "magazines" ,"dicitonary"]
+
+bookList.forEach(function(item){
+    return item
+});
+
+console.log(bookList)
+//callback methods ie it can called back to loop through other arrays
+
+function getBooks(item){
+    console.log(item)
+}
+
+ bookList.forEach(getBooks);
 
 
 
+//figures
+
+let runner = [2,3,4,5,6,]
+
+let speculators =  runner.map(function(number){
+    return number*2
+})
+console.log(speculators)
 
 
+function multiplyby3(numbers){
+    return (numbers * 3)    
+}
 
-
-
-
-
-
-
-
-
+let triple = runner.map(multiplyby3)
+console.log(triple)
