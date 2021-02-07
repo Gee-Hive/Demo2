@@ -1,0 +1,16 @@
+
+Insert
+FindOne
+FindAll
+Update
+Delete
+
+
+insert --- add new element to array
+findOne -- find an element in an array using a given id
+
+FindAll -- return all element in an array that matches a given condition
+Update -- update an element in an array when given an id and the value to update
+Delete -- remove an element from an array when given the id
+
+Datastructure -- {id: test}
