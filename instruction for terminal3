@@ -1,0 +1,16 @@
+folder----- create a empty school[array]
+Insert----- admit(or add) students(or element) to the school(array)
+FindOne---- find and return a student(or element) in the school(array) when given an id 
+FindAll---- find and return all student(or element) in the school(array) when given an id
+Update--- update a particular student(or element) in the school(array) when given an id and value to update
+Delete--- remove a particular student(or element) in the school(array) when given the id
+
+
+insert --- add new element to array
+findOne -- find an element in an array using a given id
+
+FindAll -- return all element in an array that matches a given condition
+Update -- update an element in an array when given an id and the value to update
+Delete -- remove an element from an array when given the id
+
+Datastructure -- {id: test}
