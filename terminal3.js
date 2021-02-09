@@ -1,6 +1,6 @@
 console.warn("Welcome")
 
-let school = []
+let mySchool = []
 
 let entranceResult = [
     {
@@ -70,3 +70,53 @@ let entranceResult = [
 
 
 ]
+
+function printMySchool() {
+    console.log(mySchool)
+}
+
+function admissions(){
+    let adminOfficer = entranceResult.filter(function(value){
+        return value
+    })    
+    mySchool = adminOfficer
+}
+
+function findStudent(id){
+    let studentFinder = mySchool.find(function(value){
+        return value.id === id
+    })
+    return (studentFinder)
+}
+
+function findAllStudent(id){
+    let allStudentFinder = mySchool.filter(function(value){
+        return value.id === id
+    })
+    console.log(allStudentFinder)
+}
+
+function findStudentByLetter(letter){
+    let byLetterFinder = mySchool.filter(function(value){
+        return value.studentName.includes(letter)
+    })
+    console.log(byLetterFinder)
+}
+let t = "t"
+let e ="e"
+let h ="h"
+let i = "i"
+
+function pointUpdater(id){
+    let pointUpdate = findStudent(id)
+    pointUpdate.examPoint = pointUpdate.examPoint *2
+    console.log(pointUpdate)
+}
+
+printMySchool()
+admissions()
+printMySchool()
+console.log(findStudent(4))
+findAllStudent(4)
+findStudentByLetter(i)
+pointUpdater(4)

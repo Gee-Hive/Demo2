@@ -1,8 +1,9 @@
-folder----- create a empty school[array]
-Insert----- admit(or add) students(or element) to the school(array)
-FindOne---- find and return a student(or element) in the school(array) when given an id 
-FindAll---- find and return all student(or element) in the school(array) when given an id
-Update--- update a particular student(or element) in the school(array) when given an id and value to update
+folder----- create a empty school[array]=== DONE()
+Insert----- admit(or add) students(or element) to the school(array)===DONE()
+FindOne---- find and return a student(or element) in the school(array) when given an id ===DONE()
+FindAll---- find and return all student(or element) in the school(array) when given an id===DONE()
+{even one for find by letter}
+Update--- update a particular student(or element) in the school(array) when given an id and value to update===DONE()
 Delete--- remove a particular student(or element) in the school(array) when given the id
 
 
