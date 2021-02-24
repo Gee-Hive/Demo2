@@ -113,6 +113,12 @@ function pointUpdater(id){
     console.log(pointUpdate)
 }
 
+function removeStudent(id){
+    let studentRemover = findStudent(id)
+    console.log(studentRemover)
+    mySchool.splice(studentRemover,1)
+}
+
 printMySchool()
 admissions()
 printMySchool()
@@ -120,3 +126,5 @@ console.log(findStudent(4))
 findAllStudent(4)
 findStudentByLetter(i)
 pointUpdater(4)
+removeStudent(7)
+printMySchool()
